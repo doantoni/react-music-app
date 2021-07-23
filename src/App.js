@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
+
+import Sidebar from './components/Sidebar';
+import Main from './components/Main';
+import Footer from './components/Footer';
+
 import './App.css';
 
 function App() {
+
+  const [chord, setChord] = useState("");
+  const [instrument, setInstrument] = useState("")
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+    <>
+      <div className="app">
+        <Sidebar />
+        <Main instrument = {instrument} onChoose = { (inst) => setInstrument(inst)}/>
+      </div>
+      <Footer />
+    </>
+
   );
 }
 

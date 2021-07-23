@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+.nav {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  color: white;
+  background-color: rgb(41, 47, 59);
+  font-weight: 400;
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px black;
+  border-bottom: 1px solid white;
+}
+
+.text {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text > p {
+  padding: 0.5rem 0;
+  transition: 0.4s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.text > p:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
+}

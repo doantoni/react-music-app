@@ -1,0 +1,27 @@
+.choose {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.instrument {
+  width: 40%;
+  height: 20rem;
+  box-shadow: 0.2rem 0.2rem 0.5em rgb(13, 18, 27);
+  border-radius: 10px;
+  transition: box-shadow 0.15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instrument:hover {
+  box-shadow: 0.2rem 0.2rem 1em rgb(73, 133, 173);
+  cursor: pointer;
+}
+
+.instrument > img {
+  height: 70%;
+  width: auto;
+}
